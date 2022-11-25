@@ -18,11 +18,11 @@ const Slider = ({ employeeImage }) => {
     },// eslint-disable-next-line
      [currentIndex]);
 
-    const imageStyle = {
-        borderRadius: '90px',
-        border: "solid yellow 4px",
-        padding: "3px",
-    }
+    // const imageStyle = {
+    //     borderRadius: '90px',
+    //     border: "solid yellow 4px",
+    //     padding: "3px",
+    // }
     return (
         <Box sx={{ position: "relative",margin:"5em"}}>
             <Box > </Box>

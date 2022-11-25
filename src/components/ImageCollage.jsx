@@ -1,5 +1,5 @@
 import { Box, Image, Flex } from "@chakra-ui/react";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import img1 from "../components/images/img1.jpg";
 import img2 from "../components/images/img2.jpg";
 import img3 from "../components/images/img3.jpg";
@@ -9,7 +9,7 @@ import img6 from "../components/images/img6.jpg";
 import img7 from "../components/images/img7.jpg";
 
 export default function ImageCollage() {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  // const [currentIndex, setCurrentIndex] = useState(0);
 
   const arrayImages = [
     { item: img1, gender: "female" },
@@ -21,10 +21,13 @@ export default function ImageCollage() {
     { item: img7, gender: "female" },
   ];
 
-  useEffect(() => {
-    const collage = setInterval(() => {}, 2000);
-  }, []);
-  console.log(currentIndex);
+  // useEffect(() => {
+  //   const collage = setInterval(() => {}, 2000);
+  // }, []);
+  // console.log( setCurrentIndex);
+  // console.log( currentIndex);
+  
+
   return (
     <Flex width="100%" alignItems={"center"} justifyContent="center" margin={"5em"}> 
       <Box width={"600px"} height="800px" position="relative">

@@ -1,7 +1,7 @@
 import { Box,Image, Select } from "@chakra-ui/react";
 import React, { useEffect, useRef, useState } from "react";
-import img1 from "../components/images/img1.jpg";
-import img2 from "../components/images/img2.jpg";
+// import img1 from "../components/images/img1.jpg";
+// import img2 from "../components/images/img2.jpg";
 import { motion } from "framer-motion";
 
 export default function Detials({detialImages,mainHeadding,productDiscription}) {
