@@ -12,7 +12,6 @@ import img3 from "../src/components/images/img3.jpg";
 import tee1 from '../src/components/images/tee1.jpeg';
 import tee2 from '../src/components/images/tee2.jpeg';
 import Detials from './components/Detials';
-import Rating from './components/Rating';
 import feature1 from './/components/images/feature1.jpeg';
 import feature2 from './/components/images/feature2.jpeg';
 import feature3 from './/components/images/feature3.jpeg';
@@ -45,6 +44,7 @@ function App() {
       const detialImages = {[
         { item: tee1, colors: "red" },
         { item: tee2, colors: "black" },
+        { item: tee1, colors: "red" },
       ]}
       mainHeadding="Classic Crew"
       productDiscription="Midnight Navy 100% Supima Cotton Invisible Stitching Modern Cut" />
@@ -55,7 +55,6 @@ function App() {
    { identity: "Ramesh" , posting:"customer" , Review: " ❝Quick Delivery❞ "},
 ]}
 />
-<Rating />
  <GifCard 
      const gifImages={[
        feature1,

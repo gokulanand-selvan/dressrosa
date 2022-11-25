@@ -24,8 +24,8 @@ export default function Detials({detialImages,mainHeadding,productDiscription}) 
     }, [sticky]);
 
     return (
-        <Box sx={{ display: "flex", justifyContent: "start"}}>
-            <Box width={"65%"} >
+        <Box sx={{ display: "flex", justifyContent: "start",alignItems:"end"}}>
+            <Box maxWidth={"70%"} >
                 {detialImages.map((detialImg, index) => (
                     <Image
                         style={{
@@ -54,13 +54,14 @@ export default function Detials({detialImages,mainHeadding,productDiscription}) 
                     display: "flex",
                     flexDirection: "column",
                     justifyContent: "end",
-                    maxWidth:"30%",
+                    width:"30%",
+                    alignContent:"start"
                 }}>
-                <Box display={"flex"} flexDirection={"row"} textAlign={"center"}  justifyContent={"space-Evenly"} >
-                    <h1 style={{ fontWeight: "bolder" }}>{mainHeadding}</h1>
+                <Box display={"flex"} flexDirection={"row"} textAlign={"center"}  justifyContent={"space-Evenly"}  marginTop={"5em"}  >
+                    <h1 style={{ fontWeight: "bolder",fontFamily:"'Montserrat', sans-serif" ,fontSize:"18px" }}>{mainHeadding}</h1>
                     <Select variant="unstyled" maxWidth={"20%"} size="md">
-                        <option value="option1">Men</option>
-                        <option value="option2">Women</option>
+                        <option style={{fontFamily:"'Montserrat', sans-serif" }} value="option1">Men</option>
+                        <option style={{fontFamily:"'Montserrat', sans-serif" }} value="option2">Women</option>
                     </Select>
                 </Box>
                 <Box
@@ -90,41 +91,41 @@ export default function Detials({detialImages,mainHeadding,productDiscription}) 
                     })}
                 </Box>
                 <br />
-                <Box alignItems={"center"} display={"flex"} justifyContent={"end"} flexDirection={"column"}>
-                    <p style={{ maxWidth: "73%" ,fontWeight:"400",fontSize:"30px",}}>
+                <Box alignItems={"center"} display={"flex"} justifyContent={"end"} flexDirection={"column"} marginTop={"4em"}>
+                    <p style={{ maxWidth: "73%" ,fontWeight:"400",fontSize:"30px",fontFamily:"'Montserrat', sans-serif" }}>
                       {productDiscription}
                     </p>
-                    <a style={{ color: "blue" }} href="link">
+                    <a  style={{ color: "blue",fontFamily:"'Montserrat', sans-serif" }} href="link">
                         Learn More
                     </a>
                 </Box>
-                <Box  alignItems={"center"} >
-                    <Box display={"flex"} justifyContent={"space-evenly"} >
-                        <p style={{ lineHeight: '1.4em' }}>
+                <Box  alignItems={"center"} marginBottom={"4em"} marginTop={"5em"}  >
+                    <Box display={"flex"} justifyContent={"space-evenly"}   >
+                        <p style={{ lineHeight: '1.4em',fontFamily:"'Montserrat', sans-serif" }}>
                             Shipping
                         </p>
-                        <div style={{ border: " none", flexGrow: 1, borderBottom: " 1px dotted black", height: "0.8em", maxWidth: "20%", }} />
-                        <p>Ships in 10 hours</p>
+                        <div style={{ fontFamily:"'Montserrat', sans-serif",border: " none", flexGrow: 1, borderBottom: " 1px dotted black", height: "0.8em", maxWidth: "20%", }} />
+                        <p style={{fontFamily:"'Montserrat', sans-serif"}}>Ships in 10 hours</p>
                     </Box>
-                    <Box display={"flex"} justifyContent={"space-evenly"} >
-                        <p style={{ lineHeight: '1.4em' }}>
+                    <Box display={"flex"} justifyContent={"space-evenly"}  marginTop={"10px"} >
+                        <p style={{ lineHeight: '1.4em',fontFamily:"'Montserrat', sans-serif" }}>
                             Returns
                         </p>
                         <div style={{ border: " none", flexGrow: 1, borderBottom: " 1px dotted black", height: "0.8em", maxWidth: "20%" }} />
-                        <p>14 Days Returns</p>
+                        <p style={{fontFamily:"'Montserrat', sans-serif"}}>14 Days Returns</p>
                     </Box>
                 </Box>
                 <Box width={"500px"} display={'flex'} flexDirection={"column"}>
                     <Box height={"70px"} backgroundColor={'#fff'} border={'1px solid whitesmoke'} display={"flex"} alignItems={"center"} justifyContent={'space-around'}>
                         <Select variant="unstyled" size="md" maxWidth={"20%"}>
-                            <option svalue="option1">size:xs</option>
-                            <option value="option2">size:M</option>
+                            <option style={{fontFamily:"'Montserrat', sans-serif"}} svalue="option1">size:xs</option>
+                            <option style={{fontFamily:"'Montserrat', sans-serif"}} value="option2">size:M</option>
                         </Select>
-                        <p><a style={{color:"blue"}} href="link">Size Guide</a></p>
+                        <p><a style={{color:"blue",fontFamily:"'Montserrat', sans-serif"}} href="link">Size Guide</a></p>
                     </Box>
                     <Box textAlign={"center"} height={100} backgroundColor={'#1a2e3e'} display={"flex"} alignItems={"center"} flexDirection={"column"} justifyContent={'center'}>
-                        <p><a style={{ color: "whitesmoke" }} href="link"> Add For 1500 </a></p>
-                        <p style={{ color: "whitesmoke" }}>200 offer when you buy 2</p>
+                        <p><a style={{ color: "whitesmoke",fontFamily:"'Montserrat', sans-serif" }} href="link"> Add For 1500 </a></p>
+                        <p style={{ color: "whitesmoke" ,fontFamily:"'Montserrat', sans-serif"}}>200 offer when you buy 2</p>
                     </Box>
                 </Box>
             </Box>

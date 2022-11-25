@@ -7,7 +7,7 @@ export default function CardImage( {arrayImages, width ,height } ) {
 
   return (
     <>
-      <Box sx={{display:"flex",justifyContent:"space-evenly"}}>
+      <Box sx={{display:"flex",justifyContent:"space-evenly",marginTop:"5em"}}>
       
           {arrayImages.map((arrImg,index) =>(
               <motion.div
