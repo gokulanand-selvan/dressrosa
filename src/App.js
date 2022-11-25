@@ -16,6 +16,7 @@ import feature1 from './/components/images/feature1.jpeg';
 import feature2 from './/components/images/feature2.jpeg';
 import feature3 from './/components/images/feature3.jpeg';
 import Slider from './components/Slider';
+import MainPage from './components/MainPage';
  
 
 function App() {
@@ -48,7 +49,7 @@ function App() {
       ]}
       mainHeadding="Classic Crew"
       productDiscription="Midnight Navy 100% Supima Cotton Invisible Stitching Modern Cut" />
-<Slider 
+{/* <Slider 
   const employeeImage ={ [
    {identity:"BaluDas" , posting:"customer" , Review: "  ❝Service is very Satisfactoary❞ " } ,
    { identity: "RiyaRaj" , posting:"customer" , Review: " ❝Good Response❞ " },
@@ -63,8 +64,8 @@ function App() {
       ]}
       width= "25rem"
       height= "25rem"
-      />
-     <CardImage
+      /> */}
+     {/* <CardImage
     const arrayImages={[
       img1 ,
       img2 ,
@@ -72,8 +73,9 @@ function App() {
     ]}
     width= "25rem"
     height= "25rem"
-    />
-    <ImageCollage /> 
+    /> */}
+    <MainPage />
+    {/* <ImageCollage />  */}
    </Box>
   );
 }
