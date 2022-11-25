@@ -1,7 +1,7 @@
 import { Box } from "@chakra-ui/react";
 import React from "react";
 import { motion } from "framer-motion";
-import Detials from "./Detials";
+// import Detials from "./Detials";
 
 export default function CardImage( {arrayImages, width ,height } ) {
 
