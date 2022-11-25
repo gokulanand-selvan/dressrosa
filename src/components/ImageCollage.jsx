@@ -26,8 +26,8 @@ export default function ImageCollage() {
   }, []);
   console.log(currentIndex);
   return (
-    <Flex width="100%" alignItems={"center"} justifyContent="center"> 
-      <Box width={"600px"} border="1px solid red" height="800px" position="relative">
+    <Flex width="100%" alignItems={"center"} justifyContent="center" margin={"5em"}> 
+      <Box width={"600px"} height="800px" position="relative">
         {arrayImages.map((images, index) => {
           let right = 0;
           let left = 0;

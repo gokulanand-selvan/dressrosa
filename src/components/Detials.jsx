@@ -16,8 +16,8 @@ export default function Detials({detialImages,mainHeadding,productDiscription}) 
     function update() {
         const elem = ImageRef.current;
         const rect = elem.getBoundingClientRect();
-        Math.sign(rect.bottom) === -1 ? setSticky(false) : setSticky(true);
-        // console.log(rect );
+        Math.sign(rect.top) === -1 ? setSticky(false) : setSticky(true);
+        console.log(rect );
     }
     useEffect(() => {
         console.log(sticky);
