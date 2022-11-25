@@ -23,12 +23,6 @@ export default function Detials({detialImages,mainHeadding,productDiscription}) 
         console.log(sticky);
     }, [sticky]);
 
-    // const detialImages = [
-    //     { item: img1, colors: "red" },
-    //     { item: img2, colors: "black" },
-    // ];
-    //   const colors = ["red", "yellow", "blue", "black"];
-
     return (
         <Box sx={{ display: "flex", justifyContent: "start"}}>
             <Box width={"65%"} >
@@ -36,10 +30,10 @@ export default function Detials({detialImages,mainHeadding,productDiscription}) 
                     <Image
                         style={{
                             objectFit: "cover",
-                            width: "auto",
-                            height: "auto",
+                            width: "1700px",
+                            maxheight: "700px",
                             borderRadius: "0px",
-                        }}
+                         }}
                         src={detialImg.item}
                         alt="img"
                         key={index}
@@ -138,4 +132,3 @@ export default function Detials({detialImages,mainHeadding,productDiscription}) 
 
     );
 }
-// sx={{ position: "relative" }}

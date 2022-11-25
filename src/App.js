@@ -12,6 +12,7 @@ import img7 from "../src/components/images/img7.jpg";
 import tee1 from '../src/components/images/tee1.jpeg';
 import tee2 from '../src/components/images/tee2.jpeg';
 import Detials from './components/Detials';
+import Rating from './components/Rating';
 
 
 function App() {
@@ -43,11 +44,9 @@ function App() {
         { item: tee2, colors: "black" },
     ]}
     mainHeadding="Classic Crew"
-    productDiscription="Midnight Navy 100% Supima Cotton Invisible Stitching Modern Cut"
-      />
-
-
-      <GifCard 
+    productDiscription="Midnight Navy 100% Supima Cotton Invisible Stitching Modern Cut" />
+<Rating />
+ <GifCard 
      const gifImages={[
        img5 ,
       img6 ,
@@ -55,15 +54,25 @@ function App() {
     ]}
     width= "25rem"
     height= "25rem"
-    /> <GifCard 
-    const gifImages={[
-      img5 ,
-     img6 ,
-     img7 ,
-   ]}
-   width= "25rem"
-   height= "25rem"
-   /> 
+    />
+    <GifCard 
+     const gifImages={[
+       img5 ,
+      img6 ,
+      img7 ,
+    ]}
+    width= "25rem"
+    height= "25rem"
+    />
+    <GifCard 
+     const gifImages={[
+       img5 ,
+      img6 ,
+      img7 ,
+    ]}
+    width= "25rem"
+    height= "25rem"
+    />
    </Box>
   );
 }
