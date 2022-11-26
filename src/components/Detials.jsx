@@ -5,7 +5,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
 export default function Detials({ detialImages, mainHeadding, productDiscription }) {
-    const [sticky, setSticky] = useState(false);
+    const [sticky, setSticky] = useState(true);
 
     const ImageRef = useRef();
 
