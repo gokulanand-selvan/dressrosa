@@ -19,6 +19,7 @@ export default function ImageCollage() {
     { item: img5, gender: "male" },
     { item: img6, gender: "female" },
     { item: img7, gender: "female" },
+    { item: img7, gender: "female" },
   ];
 
   // useEffect(() => {
