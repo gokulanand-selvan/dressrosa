@@ -2,10 +2,9 @@ import { Box, Image, Select } from "@chakra-ui/react";
 import React, { useEffect, useRef, useState } from "react";
 // import img1 from "../components/images/img1.jpg";
 // import img2 from "../components/images/img2.jpg";
-import { motion } from "framer-motion";
 
-export default function Detials({ detialImages, mainHeadding, productDiscription }) {
-    const [sticky, setSticky] = useState(false);
+export const Detials =({ detialImages, mainHeadding, productDiscription }) => {
+    const [sticky, setSticky] = useState(true);
 
     const ImageRef = useRef();
 
@@ -31,8 +30,6 @@ export default function Detials({ detialImages, mainHeadding, productDiscription
             justifyContent={"start"}
             alignItems={"end"}
             flexDirection={{ base: "column", md: "row" }}
-           
-
         >
             {/* imageside */}
             <Box maxWidth={{ base: "auto", md: "70%" }}
@@ -84,10 +81,7 @@ export default function Detials({ detialImages, mainHeadding, productDiscription
                     }} >
                     {detialImages.map((color, index) => {
                         return (
-                            <motion.div
-                                className="box"
-                                whileHover={{ scale: 0.7 }}
-                                transition={{ type: " inertia", stiffness: 500, damping: 10 }}
+                            <Box
                                 style={{ display: "flex", flexDirection: "row" }} >
                                 <button
                                     key={index}
@@ -97,9 +91,8 @@ export default function Detials({ detialImages, mainHeadding, productDiscription
                                         height: "20px",
                                         borderRadius: "10px",
                                         backgroundColor: color.colors,
-                                        // transform: " rotateX(0deg) rotate(0deg) perspective(2em)",
                                     }} />
-                            </motion.div>
+                            </Box>
                         );
                     })}
                 </Box>

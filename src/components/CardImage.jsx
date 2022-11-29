@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function CardImage({ arrayImages, width, height }) {
   return (
     <>
-      <Box sx={{ display: "flex", justifyContent: "space-evenly" }}>
+      <Box sx={{ display: "flex", justifyContent: "space-evenly",}}>
         {arrayImages.map((arrImg, index) => (
           <motion.div
             // drag
@@ -16,16 +16,19 @@ export default function CardImage({ arrayImages, width, height }) {
             //   right: 50,
             //   bottom: 50,
             // }}
-            whileHover={{ scale: 0.9 }}
-            transition={{ duration:0.9 }}
-            initial={{x:200}}
-            animate={{ x: 2, }}>
+            whileHover={{scale:0.9}}
+            transition={{duration:0.5}}
+            // initial={{x:1200}}
+            // animate={{ x: 2, }}
+            >
             <img
+            // whileHover={{ scale:[ 1 , 1.4,1.4, 1,1],borderRadius:["20%","20%","50%","50%","20"],rotate:[0,0,360,360,0,]}}
+            // transition={{duration:2  }}
               style={{
                 objectFit: "cover",
                 width: width,
-                height: "50vh",
-                borderRadius: "50px",
+                height: height,
+                borderRadius:"15px"
               }}
               src={arrImg}
               alt="ooop"
