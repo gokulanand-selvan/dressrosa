@@ -3,9 +3,9 @@ import { Box } from '@chakra-ui/react';
 // import CardImage from './components/CardImage';
 // import GifCard from './components/GifCard';
 // import ImageCollage from './components/ImageCollage';
-import img1 from "../src/components/images/img1.jpg";
-import img2 from "../src/components/images/img2.jpg";
-import img3 from "../src/components/images/img3.jpg";
+// import img1 from "../src/components/images/img1.jpg";
+// import img2 from "../src/components/images/img2.jpg";
+// import img3 from "../src/components/images/img3.jpg";
 // import img5 from "../src/components/images/img5.jpg";
 // import img6 from "../src/components/images/img6.jpg";
 // import img7 from "../src/components/images/img7.jpg";
@@ -20,21 +20,17 @@ import img3 from "../src/components/images/img3.jpg";
 // import Navbar from './components/Navbar';
 // import logo from './components/images/logo.webp';
 import LandingPage from './components/LandingPage';
-import ProductWithTwoCards from './components/ProductWithTwoCards';
-import BackgroundHover from './components/BackgroundHover';
+import { Route, Routes } from 'react-router-dom';
+// import ProductWithTwoCards from './components/ProductWithTwoCards';
 
 
 function App() {
   return (
     <Box>
-<LandingPage />
-<BackgroundHover
- const arrayImages={[
-  
-  img2 ,
-  img3 ,
-]}
-/>
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+      </Routes>
+
       {/* <CardImage
     const arrayImages={[
       img1 ,

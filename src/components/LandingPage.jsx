@@ -10,6 +10,7 @@ import ProductWithNoCompo from './ProductWithNoCompo';
 import ProductWithTwoCards from './ProductWithTwoCards';
 import solid from '../components/images/solid1.jpeg'
 import solidcard1 from '../components/images/solid1.jpeg'
+import shorts from '../components/images/shorts.jpeg'
 
 export default function LandingPage() {
     return (
@@ -35,12 +36,16 @@ export default function LandingPage() {
                 image1={LPimage1}
             />
             <ProductWithNoCompo
+            backgroundColor ={"#a6a7a7"}
                 image3={lite1}
             />
             <ProductWithTwoCards
                 image4={solid}
                 solidcard1 ={solidcard1}
             />
+            <ProductWithNoCompo
+            backgroundColor = {"#fcfafa"}
+            image3={shorts} />
         </>
     )
 }

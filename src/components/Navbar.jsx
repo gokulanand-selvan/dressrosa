@@ -22,13 +22,13 @@ export default function Navbar({ logo }) {
                     }}
                 >
                     <motion.li
-                        whileHover={{ background: "black", color: "white",}} 
+                        // whileHover={{ background: "black", color: "white",}} 
                         style={{ paddingLeft: "100px", fontWeight: "bold", lineHeight: "1.7em", fontSize: "20px" }}
                     >
                         <a href="link">  Shop </a>
                     </motion.li>
                     <motion.li
-                      whileHover={{ background: "black", color: "white", }}
+                    //   whileHover={{ background: "black", color: "white", }}
                         style={{ paddingLeft: "50px", fontWeight: "bold", lineHeight: "1.7em", fontSize: "20px", }}
                     >
                         <a href="link">  Reviews </a>
