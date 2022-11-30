@@ -24,7 +24,7 @@ export default function ProductShow({ image1,  }) {
                 <Text lineHeight="1.7em"
                     fontSize="5xl"
                     fontWeight="extrabold"
-                    color="white" style={{ position: "absolute", top: '62%', left: '55%', transform: 'translate(-50%, -50%)', }}>Timeless</Text>
+                    color="white" style={{ position: "absolute", top: '62%', left: '40%', transform: 'translate(-50%, -50%)', }}>Timeless</Text>
             </Box>
             <Box
                 sx={{ backgroundColor: "#000" }}

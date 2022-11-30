@@ -2,7 +2,7 @@ import { Box, Text } from '@chakra-ui/react'
 import React from 'react'
 
 
-export default function ProductWithNoCompo({ image3,backgroundColor }) {
+export default function ProductWithNoCompo({ image3,backgroundColor,title }) {
     return (
 
         <Box
@@ -24,7 +24,7 @@ export default function ProductWithNoCompo({ image3,backgroundColor }) {
                     fontWeight="extrabold"
                     color="white"
                     style={{ position: "absolute", top: '50%', left: '55%', transform: 'translate(-50%, -50%)', }}>
-                    Meet Light
+                 {title}
                 </Text>
                 <Text
                     lineHeight="1.7em"

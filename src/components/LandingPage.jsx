@@ -38,6 +38,7 @@ export default function LandingPage() {
             <ProductWithNoCompo
             backgroundColor ={"#a6a7a7"}
                 image3={lite1}
+                title={"Meet Light"}
             />
             <ProductWithTwoCards
                 image4={solid}
@@ -45,12 +46,11 @@ export default function LandingPage() {
             />
             <ProductWithNoCompo
             backgroundColor = {"#fcfafa"}
-            image3={shorts} />
+            image3={shorts} 
+            title={"Game On"}/>
         </>
     )
 }
-
-
 
 
 
