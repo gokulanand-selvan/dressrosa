@@ -38,7 +38,7 @@ export default function ProductShow({ image1,  }) {
                         classic3,
                     ]}
                     width="100%"
-                    height="70vh"
+                    height="34.5em"
                 />
             </Box>
 

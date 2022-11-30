@@ -11,8 +11,10 @@ import ProductWithTwoCards from './ProductWithTwoCards';
 import solid from '../components/images/solid1.jpeg'
 import solidcard1 from '../components/images/solid1.jpeg'
 import shorts from '../components/images/shorts.jpeg'
+import { useNavigate } from 'react-router-dom';
 
 export default function LandingPage() {
+    const navigate= useNavigate()
     return (
         <>
             <Box
@@ -22,6 +24,7 @@ export default function LandingPage() {
                 height="100vh"
                 fontFamily='"Montserrat",sans-serif'
                 position="relative"
+                onClick={()=>navigate("/hammoHoodie") }
             >
                 <a href="klow">
                     <Navbar logo={logo} />

@@ -82,6 +82,7 @@ export const Detials =({ detialImages, mainHeadding, productDiscription }) => {
                     {detialImages.map((color, index) => {
                         return (
                             <Box
+                            key={index}
                                 style={{ display: "flex", flexDirection: "row" }} >
                                 <button
                                     key={index}
@@ -100,10 +101,10 @@ export const Detials =({ detialImages, mainHeadding, productDiscription }) => {
                 <Box alignItems={"center"} display={"flex"} justifyContent={"end"} flexDirection={"column"} marginTop={"4em"}>
                     <p style={{ maxWidth: "73%", fontWeight: "400", fontSize: "30px", fontFamily: "'Montserrat', sans-serif" }}>
                         {productDiscription}
-                    </p>
                     <a style={{ color: "blue", fontFamily: "'Montserrat', sans-serif" }} href="link">
                         Learn More
                     </a>
+                    </p>
                 </Box>
                 <Box alignItems={"center"} marginBottom={"4em"} marginTop={"5em"}  >
                     <Box display={"flex"} justifyContent={"space-evenly"}   >

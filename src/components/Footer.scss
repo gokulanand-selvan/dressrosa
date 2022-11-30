@@ -1,0 +1,191 @@
+.common-subscribe {
+    background-image: radial-gradient(var(--mid-grey) 1px, transparent 0),
+      radial-gradient(var(--mid-grey) 1px, transparent 0);
+    background-color: var(--base-color);
+    background-position: 0 0, 6px 6px;
+    background-size: 12px 12px;
+    padding: calc(var(--base-block-unit) / 2) 0;
+   
+  }
+  
+  .containerFluid {
+      width: 90%;
+      height: 5em;
+      max-width: 1680px;
+      margin: 0 auto;
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  
+  footer {
+      background: #fff;
+    bottom: auto !important;
+    transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease,
+      -webkit-transform 0.3s ease;
+    .links {
+  
+      .link {
+        margin-right: 1.5em;
+        display: inline-block;
+        line-height: 2.5em;
+        transform-origin: left center;
+        transition: color 0.2s ease, -webkit-transform 0.2s ease;
+        transition: transform 0.2s ease, color 0.2s ease;
+        transition: transform 0.2s ease, color 0.2s ease,
+          -webkit-transform 0.2s ease;
+        transform: perspective(4em) rotateY(0deg);
+      }
+      .link:hover,
+      .link:focus {
+          color: var(--primary-alt-color);
+        transform: perspective(4em) rotateY(-3deg);
+      }
+      .footnote {
+          font-size: 80%;
+      }
+    }
+  }
+  
+  
+  
+  footer .footer-menu {
+    padding: calc(var(--base-block-unit) / 2) 0 calc(var(--base-block-unit) / 2) 0;
+  }
+  footer .block-column {
+    justify-content: space-between;
+  }
+  footer .block-column,
+  footer .block-column nav {
+    display: flex;
+    align-items: center;
+  }
+  footer .block-column nav {
+    align-self: center;
+  }
+  .title {
+    line-height: 2.5em;
+  
+  }
+  .store-picker-wrapper {
+    display: flex;
+    flex: none;
+    align-content: flex-end;
+    justify-content: flex-end;
+  }
+  
+  
+  footer .common-subscribe {
+    background-image: radial-gradient(var(--mid-grey) 1px, transparent 0),
+      radial-gradient(var(--mid-grey) 1px, transparent 0);
+    background-color: var(--base-color);
+    background-position: 0 0, 6px 6px;
+    background-size: 12px 12px;
+    padding: calc(var(--base-block-unit) / 2) 0;
+  }
+  footer .common-subscribe .subscribe-content-wrapper,
+  footer .common-subscribe .subscribe-form {
+    display: flex;
+    align-items: center;
+  }
+  footer .common-subscribe fieldset {
+    border: none;
+    padding: 0;
+    margin: 0 0 0 0.8em;
+  }
+  footer .common-subscribe .subscribe-message h2 {
+    margin: 0;
+  }
+  footer .common-subscribe .subscribe-message p {
+    margin-top: 0.25em;
+  }
+  footer .common-subscribe input {
+    background: var(--base-color);
+  }
+  
+  
+  footer .common-subscribe .submit-button {
+    background: var(--primary-color);
+    color: var(--base-color);
+    min-width: 8em;
+  }
+  footer .common-subscribe .submit-button:hover {
+    background: var(--primary-alt-color);
+  }
+  footer .common-subscribe .submit-button.disabled {
+    background: var(--mid-grey);
+    pointer-events: none;
+  }
+  footer .common-subscribe .block-field {
+    min-width: 300px;
+  }
+  footer .common-subscribe .subscribe-error {
+    display: none;
+  }
+  
+  @media only screen and (orientation: portrait) {
+    footer {
+      padding-bottom: 0;
+    }
+    footer .block-column {
+      flex-flow: row wrap;
+    }
+    footer nav.store-picker-wrapper {
+      margin-top: calc(var(--base-block-unit) / 8);
+    }
+    footer .block-column nav.links {
+      display: block;
+      width: 100%;
+      text-align: center;
+    }
+    footer nav.links .link {
+      margin: 0 0.5em;
+    }
+    footer nav.store-picker-wrapper {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding-bottom: calc(var(--base-block-unit) / 3);
+    }
+    footer nav.store-picker-wrapper .title {
+      line-height: 1.4em;
+    }
+    footer nav.store-picker-wrapper .store-picker {
+      margin-top: var(--base-block-unit);
+      display: block;
+      float: right;
+    }
+    .emailInput{
+        margin-bottom: 1rem;
+    }
+  }
+  @media only screen and (max-width: 991px) {
+    footer .common-subscribe {
+      text-align: left;
+    }
+    footer .common-subscribe .block-column {
+      align-items: flex-start;
+    }
+    footer .common-subscribe .subscribe-content-wrapper,
+    footer .common-subscribe .subscribe-form {
+      flex-flow: row wrap;
+    }
+    footer .common-subscribe .subscribe-message {
+      text-align: left;
+      display: block;
+      width: 100%;
+    }
+    footer .common-subscribe .subscribe-form {
+      margin: 1em auto 0;
+    }
+    footer .common-subscribe fieldset {
+      width: 100%;
+      margin: 1em 0 0;
+    }
+  }
+  footer .common-subscribe fieldset {
+      border: none;
+      padding: 0;
+      margin: 0 0 0 .8em;
+  }

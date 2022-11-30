@@ -55,16 +55,14 @@ export default function Navbar({ logo }) {
                         <a style={navHoverHandler} onMouseEnter={whenHover} onMouseLeave={noHover} href="link"> Reviews </a>
                     </motion.li>
                     <motion.li
-                        style={{ paddingLeft: "450px" }}
+                        style={{ paddingLeft: "400px", fontWeight: "bold", lineHeight: "1.7em", fontSize: "50px", }}
                     >
-                        <a style={navHoverHandler} onMouseEnter={whenHover} onMouseLeave={noHover} href="link"> <img style={{ width: "100px", height: "15px", }} src={logo} alt="logo" /> </a> </motion.li>
+                        <a style={navHoverHandler} onMouseEnter={whenHover} onMouseLeave={noHover} href="link"> March </a> </motion.li>
                 </motion.ul>
             </Box>
         </>
     )
 }
-
-
 
 
 

@@ -1,9 +1,12 @@
 import './App.css';
 import { Box } from '@chakra-ui/react';
-// import tee1 from '../src/components/images/tee1.jpeg';
-// import tee2 from '../src/components/images/tee2.jpeg';
-// import { Detials } from './components/Detials';
-// import CardImage from './components/CardImage';
+import LandingPage from './components/LandingPage';
+import { Route,  Routes } from 'react-router-dom';
+import Footer from './components/Footer';
+import hammoHoodie_1 from '../src/components/images/hammohoodie_1.jpeg';
+import hammoHoodie_2 from '../src/components/images/hammoHoodie_2.jpeg';
+import { Detials } from './components/Detials';
+import CardImage from './components/CardImage';
 // import GifCard from './components/GifCard';
 // import ImageCollage from './components/ImageCollage';
 // import img1 from "../src/components/images/img1.jpg";
@@ -19,9 +22,12 @@ import { Box } from '@chakra-ui/react';
 // import MainPage from './components/MainPage';
 // import Navbar from './components/Navbar';
 // import logo from './components/images/logo.webp';
-import LandingPage from './components/LandingPage';
-import { Route, Routes } from 'react-router-dom';
 // import ProductWithTwoCards from './components/ProductWithTwoCards';
+// import tee1 from '../src/components/images/tee1.jpeg';
+// import tee2 from '../src/components/images/tee2.jpeg';
+// import featurev1 from '../src/components/videos/hammofeature.mp4'
+// import featurev2 from '../src/components/videos/hammofeature2.mp4'
+// import featurev3 from '../src/components/videos/hammofeature3.mp4'
 
 
 function App() {
@@ -29,15 +35,15 @@ function App() {
     <Box>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        {/* <Detials path
+        <Route path='/hammoHoodie' element={<Detials
         detialImages={[
-          { item: tee1, colors: "red" },
-          { item: tee2, colors: "black" },
-          { item: tee1, colors: "pink" },
+          { item: hammoHoodie_1, colors: "red" },
+          { item: hammoHoodie_2, colors: "black" },
         ]}
         mainHeadding="Classic Crew"
-        productDiscription="Midnight Navy 100% Supima Cotton Invisible Stitching Modern Cut" /> */}
+        productDiscription="Midnight Navy 100% Supima Cotton Invisible Stitching Modern Cut" />} />
       </Routes>
+    <Footer />
 
       {/* <CardImage
     const arrayImages={[
@@ -48,6 +54,16 @@ function App() {
     width= "25rem"
     height= "25rem"
     /> */}
+
+ {/* <Detials
+        detialImages={[
+          { item: tee1, colors: "red" },
+          { item: tee2, colors: "black" },
+          { item: tee1, colors: "pink" },
+        ]}
+        mainHeadding="Classic Crew"
+        productDiscription="Midnight Navy 100% Supima Cotton Invisible Stitching Modern Cut" /> */}
+
       {/* <GifCard 
      const gifImages={[
        img5 ,
@@ -64,15 +80,7 @@ function App() {
             { identity: "Ramesh" , posting:"customer" , Review: " ❝Quick Delivery❞ "},
           ]}
         /> */}
-      {/* <Detials
-        detialImages={[
-          { item: tee1, colors: "red" },
-          { item: tee2, colors: "black" },
-          { item: tee1, colors: "pink" },
-        ]}
-        mainHeadding="Classic Crew"
-        productDiscription="Midnight Navy 100% Supima Cotton Invisible Stitching Modern Cut" /> */}
-      {/* <GifCard
+            {/* <GifCard
         gifImages={[
           { image: feature1, initial: { x: 1200, y: -1000 }, animate: { x: 2, y: 2 }, imgtransition: { duration: 2 } },
           { image: feature2, initial: { x: 1200 }, animate: { x: 2, y: 2 }, imgtransition: { duration: 2 } },
