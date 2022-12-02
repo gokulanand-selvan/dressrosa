@@ -8,7 +8,7 @@ import solidcard1 from '../components/images/solidcard1.jpeg'
 import solidcard2 from '../components/images/solidcard2.jpeg'
 
 
-export default function ProductWithTwoCards({ image4, }) {
+export default function ProductWithTwoCards({ image4,title4,backgroundColor4 }) {
     return (
         <>
 
@@ -21,7 +21,7 @@ export default function ProductWithTwoCards({ image4, }) {
                 fontFamily='"Montserrat",sans-serif'
                 zIndex={1}
                 position="relative"
-                backgroundColor="black"
+                backgroundColor={backgroundColor4}
             // marginBottom="10em"
 
             >
@@ -31,7 +31,7 @@ export default function ProductWithTwoCards({ image4, }) {
                         fontWeight="extrabold"
                         color="white"
                         style={{ position: "absolute", top: '50%', left: '55%', transform: 'translate(-50%, -50%)', }}>
-                        Solid Stuff
+                        {title4}
                     </Text>
                     <Box
                         // sx={{ backgroundColor: "red" }}

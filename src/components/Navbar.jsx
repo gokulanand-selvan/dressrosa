@@ -38,7 +38,9 @@ export default function Navbar({ logo }) {
 
     return (
         <>
-            <Box>
+            <Box
+            overflow="hidden"
+            >
                 <motion.ul
                     style={navBoxHandler}
                     // onMouseEnter={whenHover}
