@@ -1,36 +1,52 @@
 import React from 'react'
-import { Box,Text } from '@chakra-ui/react'
+import { Box, Text } from '@chakra-ui/react'
 // import CardImage from './CardImage'
 // import classic1 from '../components/images/classic1.jpeg'
 // import classic2 from '../components/images/classic2.jpeg'
+import BackgroundHover from '../components/BackgroundHover';
+import solidcard1 from '../components/images/solidcard1.jpeg'
+import solidcard2 from '../components/images/solidcard2.jpeg'
 
-export default function ProductWithTwoCards({ image4, solidcard1 }) {
+
+export default function ProductWithTwoCards({ image4,title4,backgroundColor4 }) {
     return (
         <>
 
-<Box
-            backgroundImage={`url(${image4})`}
-            // pdddingBottom ="67%"
-            backgroundSize="contain"
-            backgroundRepeat="no-repeat"
-            width="100%"
-            height="74em"
-            fontFamily='"Montserrat",sans-serif'
-            zIndex={1}
-            position="relative"
+            <Box
+                backgroundImage={`url(${image4})`}
+                backgroundSize="contain"
+                backgroundRepeat="no-repeat"
+                width="100%"
+                height="104em"
+                fontFamily='"Montserrat",sans-serif'
+                zIndex={1}
+                position="relative"
+                backgroundColor={backgroundColor4}
             // marginBottom="10em"
-            backgroundColor="black"
-        >
-            <a href="link">
-                <Text lineHeight="1.7em"
-                    fontSize="5xl"
-                    fontWeight="extrabold"
-                    color="white"
-                    style={{ position: "absolute", top: '50%', left: '55%', transform: 'translate(-50%, -50%)', }}>
-                    Solid Stuff
-                </Text>
-            </a>
-        </Box>
+
+            >
+                <a href="link">
+                    <Text lineHeight="1.7em"
+                        fontSize="5xl"
+                        fontWeight="extrabold"
+                        color="white"
+                        style={{ position: "absolute", top: '50%', left: '55%', transform: 'translate(-50%, -50%)', }}>
+                        {title4}
+                    </Text>
+                    <Box
+                        // sx={{ backgroundColor: "red" }}
+                        // paddingBottom="5em"
+                        zIndex="1"
+                    >
+                        <BackgroundHover
+                            arraySolidImages={[
+                                solidcard1, solidcard2
+                            ]}
+                        />
+                      
+                    </Box>
+                </a>
+            </Box>
 
 
             {/* <main>

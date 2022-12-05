@@ -3,37 +3,39 @@ import { motion } from "framer-motion";
 import { Box } from '@chakra-ui/react';
 
 
-export default function BackgroundHover({arrayImages}) {
+export default function BackgroundHover({ arraySolidImages }) {
     return (
         <>
-            <motion.div
-                whileHover={{ scale: 0.9 }}
-                transition={{ duration: 0.5 }}
-                style={{display:"flex"}}
+            <Box
+                style={{ display: "flex", justifyContent: "space-around", flexDirection: "row" }}
+                position="absolute"
+                top="75%"
+                left="50%"
+                transform='translate(-50%, -50%)'
+                width="100%"
             >
-                    {arrayImages.map((arrImg, index) => (
-                <Box 
-                backgroundImage = {`url(${arrImg})`}
-                width="50%"
-                height="10em"
-                backgroundSize="cover"
-                >
-                        {/* <img
+                {arraySolidImages.map((arrImg, index) => (
+                    <motion.div
+                        whileHover={{ scale: 0.9 }}
+                        transition={{ duration: 0.5 }}
+
+                    >
+                        <img
 
                             style={{
-                                objectFit: "cover",
-                                width: width,
-                                height: height,
-                                borderRadius: "15px"
+                                objectFit:"cover",
+                                width: "40em",
+                                height: "25em",
+                                borderRadius: "15px",
                             }}
                             src={arrImg}
                             alt="ooop"
                             key={index}
-                        /> */}
+                        />
+                    </motion.div>
+                ))}
+            </Box>
 
-                </Box>
-                    ))}
-            </motion.div>
         </>
     )
 }

@@ -12,11 +12,12 @@ export default function GifCard( {gifImages, width ,height } ) {
       // transition={{ duration:2 }}
       style={{display:"flex",justifyContent:"space-evenly",marginTop:"5em"}}>
       {gifImages.map((arrImg,index) =>(
-         <motion.div
-         initial={arrImg.initial}
-         animate={arrImg.animate}
-         transition={arrImg.imgtransition}
-         >
+        <motion.div
+        initial={arrImg.initial}
+        animate={arrImg.animate}
+        transition={arrImg.imgtransition}
+           key={index}
+        >
    <img style={{ objectFit: "cover",width: width,height:height,borderRadius:"10px" }} src={arrImg.image} alt="ooop" key={index} />
    </motion.div>
  ))}

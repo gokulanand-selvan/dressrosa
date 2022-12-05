@@ -2,7 +2,7 @@ import { Box, Text } from '@chakra-ui/react'
 import React from 'react'
 
 
-export default function ProductWithNoCompo({ image3 }) {
+export default function ProductWithNoCompo({ image3,backgroundColor3,title }) {
     return (
 
         <Box
@@ -16,15 +16,15 @@ export default function ProductWithNoCompo({ image3 }) {
             zIndex={1}
             position="relative"
             // marginBottom="10em"
-            backgroundColor="#a6a7a7"
+            backgroundColor={backgroundColor3}
         >
             <a href="link">
                 <Text lineHeight="1.7em"
                     fontSize="5xl"
                     fontWeight="extrabold"
                     color="white"
-                    style={{ position: "absolute", top: '50%', left: '55%', transform: 'translate(-50%, -50%)', }}>
-                    Meet Light
+                    style={{ position: "absolute", top: '50%', left: '55%', transform: 'translate(-50%, -50%)'}}>
+                 {title}
                 </Text>
                 <Text
                     lineHeight="1.7em"
