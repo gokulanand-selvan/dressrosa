@@ -5,6 +5,7 @@ import React from "react";
 import CardImage from "../components/CardImage";
 import { Box, Text } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
+import Navbar from "./Navbar";
 
 export default function ProductShow({
   image,
@@ -12,23 +13,26 @@ export default function ProductShow({
   backgroundColor,
   child,
   childArr,
-  id
+  id,
+  navBar,
 }) {
   return (
     <>
       <Box
         backgroundImage={`url(${image})`}
-        backgroundSize={{base:"cover",md:"cover"}}
+        backgroundSize={{ base: "cover", md: "cover" }}
         backgroundRepeat="no-repeat"
         // backgroundPositionY="20em"
-        paddingTop="50vh"
-        width={{base:"unset",md:"100%"}}
-        height={{base:"unset",md:"70.9em"}}
+        width={{ base: "unset", md: "100%" }}
+        height={{ base: "unset", md: "70.9em" }}
         fontFamily='"Montserrat",sans-serif'
         zIndex={1}
         position="relative"
-        marginTop="0"
+
+        // marginTop="0"
       >
+        {navBar && <Navbar />}
+
         <Text
           as={Link}
           to={`/${id}`}
@@ -51,18 +55,24 @@ export default function ProductShow({
         paddingBottom="12em"
         zIndex="1"
       >
-        <CardImage child={child} childArr={childArr}  width="100%"
-                    height="34.5em" />
+        <CardImage
+          child={child}
+          childArr={childArr}
+          width="100%"
+          height="34.5em"
+        />
       </Box>
     </>
   );
 }
 
 // eslint-disable-next-line
-{/* <CardImage
+{
+  /* <CardImage
              arrayImages={[
               c1 ,c2,c3
             ]}
             width="100%"
             height="34.5em"
-        /> */}
+        /> */
+}

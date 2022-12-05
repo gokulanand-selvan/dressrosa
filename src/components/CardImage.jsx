@@ -3,18 +3,23 @@ import React from "react";
 import { motion } from "framer-motion";
 // import Detials from "./Detials";
 
+
 export default function CardImage({ child, childArr, width, height }) {
   return (
     <>
       <Box>
-        {child &&
-          childArr.map((arrImg,index) =>  (
-            <Box key={index} sx={{ display: "flex", justifyContent: "space-evenly" }}>
-              {arrImg.image.map((e,index) => (
+        {/* condition chek for card display */}
+        {child && childArr.map((arrImg, index) => (
+            <Box
+              key={index}
+              sx={{ display: "flex", justifyContent: "space-evenly" }}
+            >
+              {arrImg.image.map((e, index) => (
                 <motion.div
                   key={index}
                   whileHover={{ scale: 0.9 }}
-                  transition={{ duration: 0.5 }}>
+                  transition={{ duration: 0.5 }}
+                >
                   <img
                     style={{
                       objectFit: "contain",

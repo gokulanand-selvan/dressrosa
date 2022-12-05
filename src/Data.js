@@ -13,107 +13,230 @@ import hammoHoodie_1 from './components/images/hammohoodie_1.jpeg';
 import hammoHoodie_2 from './components/images/hammoHoodie_2.jpeg';
 
 export const category = [
-    {
-      id: 0,
-      height: "100vh",
-      width: "100%",
-      image: LPimage2,
-      title: "The Ultimate Hoodie",
-      backgroundColor: "#dac9bd",
-      child: false,
-      childArr: ""
-    },
-    {
-      id: 1,
-      height: "150vh",
-      width: "100%",
-      image: LPimage1,
-      title: "Timeless",
-      backgroundColor: "black",
-      child: true,
-      childArr: [
-        { childId: 111 , image: [ classic1, classic2, classic3 ],width:"100%",height:"34.5em" },]
-      
-    },
-    {
-      id: 2,
-      height: "20em",
-      width: "100%",
-      image: lite1,
-      title: "Meet Light",
-      backgroundColor: "#a6a7a7",
-      child: false,
-      childArr: ""
-    },
-    {
-      id: 3,
-      height: "104em",
-      width: "100%",
-      image: solid,
-      title: "Solid Stuff",
-      backgroundColor: "black",
-      child: true,
-      childArr: [{ childId: 222, image: [ solidcard1, solidcard2 ] ,width:"100%",height:"104em" }],
-    },
-    {
-      id: 4,
-      height: "74em",
-      width: "100%",
-      image: shorts,
-      title: "Game On",
-      backgroundColor: "#fcfafa",
-      child: false,childArr: ""
-    },
-  ];
+  {
+    id: 0,
+    height: "100vh",
+    width: "100%",
+    image: LPimage2,
+    title: "The Ultimate Hoodie",
+    backgroundColor: "#dac9bd",
+    child: false,
+    childArr: "",
+    navBar: true,
+  },
 
+  {
+    id: 1,
+    height: "150vh",
+    width: "100%",
+    image: LPimage1,
+    title: "Timeless",
+    backgroundColor: "black",
+    child: true,
+    childArr: [
+      { childId: 111, image: [classic1, classic2, classic3], width: "100%", height: "34.5em" },],
+    navBar: false,
+
+  },
+  {
+    id: 2,
+    height: "20em",
+    width: "100%",
+    image: lite1,
+    title: "Meet Light",
+    backgroundColor: "#a6a7a7",
+    child: false,
+    childArr: "",
+    navBar: false,
+  },
+  {
+    id: 3,
+    height: "104em",
+    width: "100%",
+    image: solid,
+    title: "Solid Stuff",
+    backgroundColor: "black",
+    child: true,
+    childArr: [{ childId: 222, image: [solidcard1, solidcard2], width: "100%", height: "104em" }],
+    navBar: false,
+  },
+  {
+    id: 4,
+    height: "74em",
+    width: "100%",
+    image: shorts,
+    title: "Game On",
+    backgroundColor: "#fcfafa",
+    child: false,
+    childArr: "",
+    navBar: false,
+  },
+];
+
+
+// categoaryListing
 
 export const product = [
-    {
-      categoryId : 3, 
-      id: 0,
-      image: [hammoHoodie_1, hammoHoodie_2],
-      color: ["sandal", "red", "green", "brown"],
-      productDiscription: "product 1 category 3",
-      shippingTime: "Ships in a Week",
-    },
-    {
-      categoryId : 2, 
-      id: 1,
-      image: [hammoHoodie_1, hammoHoodie_2],
-      color: ["sandal", "red", "green", "brown"],
-      productDiscription:"product 1 category 2",
-      shippingTime: "Ships in a Week",
-    },
-    {
-      categoryId : 2, 
-      id: 2,
-      image: [hammoHoodie_1, hammoHoodie_2],
-      color: ["sandal", "red", "green", "brown"],
-      productDiscription:"product 2 category 2",
-      shippingTime: "Ships in a Week",
-    },
-    {
-      categoryId : 0, 
-      id: 3,
-      image: [hammoHoodie_1, hammoHoodie_2],
-      color: ["sandal", "red", "green", "brown"],
-      productDiscription:"product 1 category 0",
-      shippingTime: "Ships in a Week",
-    },
-    {
-      categoryId : 0, 
-      id: 4,
-      image: [hammoHoodie_1, hammoHoodie_2],
-      color: ["sandal", "red", "green", "brown"],
-      productDiscription:"product 2 category 0",
-      shippingTime: "Ships in a Week",
-    },
-    {
-      categoryId : 2, 
-      id: 5,
-      image: [hammoHoodie_1, hammoHoodie_2],
-      color: ["sandal", "red", "green", "brown"],
-      productDiscription:"product 2 category 2",
-      shippingTime: "Ships in a Week",
-    }
-  ]
+
+  {
+    categoryId: 0,
+    id: 0,
+    type: "Hoodies",
+    detialImages: [
+      {
+        catImage1: hammoHoodie_1,
+        title: "Hood",
+        price: "$10",
+        productId: 11,
+      },
+      {
+        catImage1: classic1,
+        title: "Hood",
+        price: "$10",
+        productId: 12,
+      },
+
+      {
+        catImage1: classic2,
+        title: "Hood",
+        price: "$10",
+        productId: 13,
+      },
+      {
+        catImage1: classic3,
+        title: "Hood",
+        price: "$10",
+        productId: 14,
+      },
+    ]
+
+  },
+
+  //2)
+
+  {
+    categoryId: 1,
+    id: 1,
+    type: "short Hand",
+    detialImages: [
+      {
+        catImage1: classic1,
+        title: "Hood",
+        price: "$10"
+      },
+    ],
+  },
+
+  {
+    categoryId: 2,
+    id: 2,
+    type: "short Hand",
+    detialImages: [
+      {
+        catImage1: classic1,
+        title: "short Hand",
+        price: "$10"
+      },
+    ],
+  },
+
+  {
+    categoryId: 3,
+    id: 3,
+    type: "Full Hand",
+    detialImages: [
+      {
+        catImage1: classic1,
+        title: "Full Hand",
+        price: "$10"
+      },
+    ],
+  },
+
+  {
+    categoryId: 4,
+    id: 4,
+    type: "shorts",
+    detialImages: [
+      {
+        catImage1: classic1,
+        title: "shorts",
+        price: "$10"
+      },
+    ],
+  },
+
+  {
+    categoryId: 5,
+    id: 5,
+    type: "sleveless",
+    detialImages: [
+      {
+        catImage1: classic1,
+        title: "sleveless",
+        price: "$10"
+      },
+    ],
+  }
+]
+
+//productdetials
+
+export const productDetials = [
+
+      {
+        itemId:11,
+        prouctImage: [hammoHoodie_1, hammoHoodie_2],
+        color: ["sandal", "red", "green", "brown"],
+        productDiscription: "product 2 category 2",
+        shippingTime: "Ships in a Week",
+        mainHeadding: "Classic Crew",
+      },
+      {
+        itemId:12,
+        prouctImage: [hammoHoodie_1, hammoHoodie_2],
+        color: ["sandal", "red", "green", "brown"],
+        productDiscription: "product 2 category 2",
+        shippingTime: "Ships in a Week",
+        mainHeadding: "Classic Crew",
+      }
+
+
+  //     {
+  //       itemId:0,
+  //       prouctImage: [hammoHoodie_1, hammoHoodie_2],
+  //       color: ["sandal", "red", "green", "brown"],
+  //       productDiscription: "product 2 category 2",
+  //       shippingTime: "Ships in a Week",
+  //       mainHeadding: "Classic Crew",
+  //     }
+
+  // {
+  //   detialId: 3,
+  //   id: 3,
+  //   productItem: [
+  //     {
+  //       prouctImage: [hammoHoodie_1, hammoHoodie_2],
+  //       color: ["sandal", "red", "green", "brown"],
+  //       productDiscription: "product 2 category 2",
+  //       shippingTime: "Ships in a Week",
+  //       mainHeadding: "Classic Crew",
+  //     }
+  //   ]
+  // },
+
+  // {
+  //   detialId: 4,
+  //   id: 4,
+  //   productItem: [
+  //     {
+  //       prouctImage: [hammoHoodie_1, hammoHoodie_2],
+  //       color: ["sandal", "red", "green", "brown"],
+  //       productDiscription: "product 2 category 2",
+  //       shippingTime: "Ships in a Week",
+  //       mainHeadding: "Classic Crew",
+  //     }
+  //   ]
+  // },
+
+]

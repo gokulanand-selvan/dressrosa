@@ -3,7 +3,13 @@ import React, { useEffect, useRef, useState } from "react";
 // import img1 from "../components/images/img1.jpg";
 // import img2 from "../components/images/img2.jpg";
 
-export const Detials = ({ detialImages, mainHeadding, productDiscription }) => {
+export const Detials = ({
+  data,
+  productImages,
+  mainHeadding,
+  productDiscription,
+  shippingTime,
+}) => {
   const [sticky, setSticky] = useState(true);
 
   const ImageRef = useRef();
@@ -22,6 +28,7 @@ export const Detials = ({ detialImages, mainHeadding, productDiscription }) => {
     console.log(sticky);
   }, [sticky]);
 
+  console.log(data);
   // const position = sticky ? "fixed"  = "relative"
 
   return (
@@ -30,7 +37,8 @@ export const Detials = ({ detialImages, mainHeadding, productDiscription }) => {
       justifyContent={"start"}
       alignItems={"end"}
       flexDirection={{ base: "column", md: "row" }}
-    >
+         >
+
       {/* imageside */}
       <Box
         maxWidth={{ base: "auto", md: "70%" }}
@@ -38,7 +46,7 @@ export const Detials = ({ detialImages, mainHeadding, productDiscription }) => {
         overflowX={{ base: "auto", md: "unset" }}
         flexWrap={{ base: "nowrap", md: "unset" }}
       >
-        {detialImages.map((detialImg, index) => (
+        {productImages.map((detialImg, index) => (
           <Image
             style={{
               objectFit: "cover",
@@ -46,7 +54,7 @@ export const Detials = ({ detialImages, mainHeadding, productDiscription }) => {
               maxheight: "700px",
               borderRadius: "0px",
             }}
-            src={detialImg.item}
+            src={detialImg}
             alt="img"
             key={index}
             // ref={ImageRef}
@@ -105,7 +113,7 @@ export const Detials = ({ detialImages, mainHeadding, productDiscription }) => {
             justifyContent: "space-evenly",
           }}
         >
-          {detialImages.map((color, index) => {
+          {productImages.map((color, index) => {
             return (
               <Box
                 key={index}
@@ -171,7 +179,7 @@ export const Detials = ({ detialImages, mainHeadding, productDiscription }) => {
               }}
             />
             <p style={{ fontFamily: "'Montserrat', sans-serif" }}>
-              Ships in 10 hours
+              {shippingTime}
             </p>
           </Box>
           <Box
