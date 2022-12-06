@@ -9,10 +9,11 @@ import solidcard2 from "./components/images/solidcard2.jpeg";
 import shorts from "./components/images/shorts.jpeg";
 import lite1 from "./components/images/lite1.jpeg";
 
-import hammoHoodie_1 from './components/images/hammohoodie_1.jpeg';
+import hammoHoodie_1 from "./components/images/hammohoodie_1.jpeg"
 import hammoHoodie_2 from './components/images/hammoHoodie_2.jpeg';
 
 export const category = [
+ 
   {
     id: 0,
     height: "100vh",
@@ -84,7 +85,7 @@ export const product = [
     type: "Hoodies",
     detialImages: [
       {
-        catImage1: hammoHoodie_1,
+        catImage1: classic3,
         title: "Hood",
         price: "$10",
         productId: 11,
@@ -184,59 +185,45 @@ export const product = [
 
 export const productDetials = [
 
-      {
-        itemId:11,
-        prouctImage: [hammoHoodie_1, hammoHoodie_2],
-        color: ["sandal", "red", "green", "brown"],
-        productDiscription: "product 2 category 2",
-        shippingTime: "Ships in a Week",
-        mainHeadding: "Classic Crew",
-      },
-      {
-        itemId:12,
-        prouctImage: [hammoHoodie_1, hammoHoodie_2],
-        color: ["sandal", "red", "green", "brown"],
-        productDiscription: "product 2 category 2",
-        shippingTime: "Ships in a Week",
-        mainHeadding: "Classic Crew",
-      }
-
-
-  //     {
-  //       itemId:0,
-  //       prouctImage: [hammoHoodie_1, hammoHoodie_2],
-  //       color: ["sandal", "red", "green", "brown"],
-  //       productDiscription: "product 2 category 2",
-  //       shippingTime: "Ships in a Week",
-  //       mainHeadding: "Classic Crew",
-  //     }
-
-  // {
-  //   detialId: 3,
-  //   id: 3,
-  //   productItem: [
-  //     {
-  //       prouctImage: [hammoHoodie_1, hammoHoodie_2],
-  //       color: ["sandal", "red", "green", "brown"],
-  //       productDiscription: "product 2 category 2",
-  //       shippingTime: "Ships in a Week",
-  //       mainHeadding: "Classic Crew",
-  //     }
-  //   ]
-  // },
-
-  // {
-  //   detialId: 4,
-  //   id: 4,
-  //   productItem: [
-  //     {
-  //       prouctImage: [hammoHoodie_1, hammoHoodie_2],
-  //       color: ["sandal", "red", "green", "brown"],
-  //       productDiscription: "product 2 category 2",
-  //       shippingTime: "Ships in a Week",
-  //       mainHeadding: "Classic Crew",
-  //     }
-  //   ]
-  // },
+  {
+    itemId: 0,
+    productImage: [solidcard2, hammoHoodie_2],
+    color: ["sandal", "red", "green", "brown"],
+    productDiscription: "Midnight Navy 100% Supima Cotton Invisible Stitching Modern Cut" ,
+    shippingTime: "Ships in a Week",
+    mainHeadding: "Classic Crew",
+  },
+  {
+    itemId: 1,
+    productImage: [hammoHoodie_1, hammoHoodie_2],
+    color: ["sandal", "red", "green", "brown"],
+    productDiscription: "Midnight Navy 100% Supima Cotton Invisible Stitching Modern Cut" ,
+    shippingTime: "Ships in a Week",
+    mainHeadding: "Classic Crew",
+  },
+  {
+    itemId: 2,
+    productImage: [solidcard1, solidcard2],
+    color: ["sandal", "red", "green", "brown"],
+    productDiscription: "Midnight Navy 100% Supima Cotton Invisible Stitching Modern Cut" ,
+    shippingTime: "Ships in a Week",
+    mainHeadding: "Classic Crew",
+  },
+  {
+    itemId: 3,
+    productImage: [hammoHoodie_1, solidcard2],
+    color: ["sandal", "red", "green", "brown"],
+    productDiscription: "Midnight Navy 100% Supima Cotton Invisible Stitching Modern Cut" ,
+    shippingTime: "Ships in a Week",
+    mainHeadding: "Classic Crew",
+  },
+  {
+    itemId: 4,
+    productImage: [hammoHoodie_1, solidcard1],
+    color: ["sandal", "red", "green", "brown"],
+    productDiscription: "Midnight Navy 100% Supima Cotton Invisible Stitching Modern Cut" ,
+    shippingTime: "Ships in a Week",
+    mainHeadding: "Classic Crew",
+  }
 
 ]
