@@ -1,8 +1,5 @@
 import React from "react";
-
 import ProductShow from "../ProductShow";
-
-import { Box } from "@chakra-ui/react";
 import Footer from "../Footer"
 
 

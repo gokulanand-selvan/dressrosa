@@ -19,6 +19,7 @@ export default function Footer() {
 
                   <fieldset className="block-field">
                     <input
+                    style={{border:"solid 1px black"}}
                       className="emailInput"
                       type="email"
                       placeholder="Your email"
@@ -28,6 +29,7 @@ export default function Footer() {
                   </fieldset>
                   <fieldset>
                     <input
+                    style={{border:"solid 1px black"}}
                       className="submit-button disabled"
                       type="submit"
                       value="Subscribe"
