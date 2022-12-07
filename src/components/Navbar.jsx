@@ -35,7 +35,6 @@ export default function Navbar({ logo }) {
         height:"6em",
     }
 
-
   return (
         <>
             <Box

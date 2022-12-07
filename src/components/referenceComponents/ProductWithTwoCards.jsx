@@ -3,7 +3,7 @@ import { Box, Text } from '@chakra-ui/react'
 // import CardImage from './CardImage'
 // import classic1 from '../components/images/classic1.jpeg'
 // import classic2 from '../components/images/classic2.jpeg'
-import BackgroundHover from '../components/BackgroundHover';
+import BackgroundHover from './BackgroundHover';
 import solidcard1 from '../components/images/solidcard1.jpeg'
 import solidcard2 from '../components/images/solidcard2.jpeg'
 
