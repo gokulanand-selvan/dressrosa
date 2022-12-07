@@ -5,14 +5,21 @@ import { motion } from "framer-motion";
 
 
 export default function CardImage({ child, childArr, width, height }) {
+  
   return (
     <>
-      <Box>
-        {/* condition chek for card display */}
+      <Box >
         {child && childArr.map((arrImg, index) => (
             <Box
               key={index}
-              sx={{ display: "flex", justifyContent: "space-evenly" }}
+              width={{base:"30em", md:"unset"}}
+              maxWidth={{base:"100%",md:"unset"}}
+              height={{base:"unset",md:"unset"}}
+              paddingBottom={{base:"10em",md:"unset"}}
+              display={{base:"-webkit-box",md:"flex"}}
+              overflowX={{ base: "auto", md: "unset" }}
+              flexWrap={{ base: "nowrap", md: "unset" }}
+              justifyContent={{base:"unset",md:"space-evenly"}}
             >
               {arrImg.image.map((e, index) => (
                 <motion.div

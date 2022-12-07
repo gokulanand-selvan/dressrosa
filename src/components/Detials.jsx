@@ -2,8 +2,8 @@ import { Box, Image, Select } from "@chakra-ui/react";
 import React, { useEffect, useRef, useState } from "react";
 
 
+
 export const Detials = ({
-  data,
   productImages,
   mainHeadding,
   productDiscription,
@@ -28,18 +28,16 @@ export const Detials = ({
     // console.log(sticky);
   }, [sticky]);
 
-  // console.log(data);
-  // const position = sticky ? "fixed"  = "relative"
-  
-// console.log(productImages);
+
+  // console.log(productImages);
+
   return (
     <Box
       display={{ base: "flex", md: "flex" }}
       justifyContent={"start"}
       alignItems={"end"}
       flexDirection={{ base: "column", md: "row" }}
-         >
-
+    >
       {/* imageside */}
       <Box
         maxWidth={{ base: "auto", md: "70%" }}
@@ -54,11 +52,12 @@ export const Detials = ({
               width: "1700px",
               maxheight: "700px",
               borderRadius: "0px",
+              // height:"300px"
             }}
             src={detialImg}
             alt="img"
             key={ItemId}
-            // ref={ImageRef}
+            ref={ImageRef}
           />
         ))}
       </Box>
@@ -127,7 +126,7 @@ export const Detials = ({
                     width: "20px",
                     height: "20px",
                     borderRadius: "10px",
-                    backgroundColor: colour
+                    backgroundColor: colour,
                   }}
                 />
               </Box>
@@ -278,6 +277,7 @@ export const Detials = ({
             >
               200 offer when you buy 2
             </p>
+ 
           </Box>
         </Box>
       </Box>

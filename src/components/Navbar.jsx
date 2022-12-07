@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { motion } from "framer-motion"
-import { Box, } from '@chakra-ui/react'
+import { Box, ListItem, UnorderedList, } from '@chakra-ui/react'
 
 
 export default function Navbar({ logo }) {
@@ -36,31 +36,33 @@ export default function Navbar({ logo }) {
         height:"6em"
     }
 
-    return (
+
+  return (
         <>
             <Box
             overflow="hidden"
+            zIndex={1}
             >
-                <motion.ul
-                    style={navBoxHandler}
+                <UnorderedList
+                    sx={navBoxHandler}
                     // onMouseEnter={whenHover}
                     // onMouseLeave={noHover}
                 >
-                    <motion.li
-                        style={{ paddingLeft: "100px", fontWeight: "bold", lineHeight: "1.7em", fontSize: "20px" }}
+                    <ListItem
+                        sx={{ paddingLeft:{ md:"100px",base:"100px"}, fontWeight: "bold", lineHeight: {md:"1.7em",base:"unset"}, fontSize: {md:"20px",base:"unset"} }}
                     >
                         <a style={navHoverHandler} onMouseEnter={whenHover} onMouseLeave={noHover} href="link">  Shop </a>
-                    </motion.li>
-                    <motion.li
-                        style={{ paddingLeft: "50px", fontWeight: "bold", lineHeight: "1.7em", fontSize: "20px", }}
-                    >
+                    </ListItem>
+                    <ListItem
+                        sx={{ paddingLeft:{ md:"50px",base:"50px"}, fontWeight: "bold", lineHeight: {md:"1.7em",base:"unset"}, fontSize: {md:"20px",base:"unset"} }}
+                        >
                         <a style={navHoverHandler} onMouseEnter={whenHover} onMouseLeave={noHover} href="link"> Reviews </a>
-                    </motion.li>
-                    <motion.li
-                        style={{ paddingLeft: "400px", fontWeight: "bold", lineHeight: "1.7em", fontSize: "50px", }}
-                    >
-                        <a style={navHoverHandler} onMouseEnter={whenHover} onMouseLeave={noHover} href="link"> March </a> </motion.li>
-                </motion.ul>
+                    </ListItem>
+                    <ListItem
+                        sx={{ paddingLeft:{ md:"400px",base:"400px"}, fontWeight: "bold", lineHeight: {md:"1.7em",base:"unset"}, fontSize: {md:"50px",base:"unset"} }}
+                        >
+                        <a style={navHoverHandler} onMouseEnter={whenHover} onMouseLeave={noHover} href="link"> March </a> </ListItem>
+                </UnorderedList>
             </Box>
         </>
     )
