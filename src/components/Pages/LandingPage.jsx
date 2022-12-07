@@ -1,13 +1,12 @@
 import React from "react";
-
 import ProductShow from "../ProductShow";
+import Footer from "../Footer"
 
-import { Box } from "@chakra-ui/react";
 
 export default function LandingPage({ category }) {
   return (
     <>
-      <Box>
+     
         {category.map((product) => (
           <ProductShow
             key={product.id}
@@ -18,9 +17,11 @@ export default function LandingPage({ category }) {
             child={product.child}
             childArr={product.childArr}
             navBar={product.navBar}
+            subTitle={product.subTitle}
+            mobimg={product.mobimg}
           />
         ))}
-      </Box>
+      <Footer />
     </>
   );
 }

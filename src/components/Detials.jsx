@@ -1,14 +1,14 @@
 import { Box, Image, Select } from "@chakra-ui/react";
 import React, { useEffect, useRef, useState } from "react";
-// import img1 from "../components/images/img1.jpg";
-// import img2 from "../components/images/img2.jpg";
+
+
 
 export const Detials = ({
-  data,
   productImages,
   mainHeadding,
   productDiscription,
   shippingTime,
+  color,
 }) => {
   const [sticky, setSticky] = useState(true);
 
@@ -22,14 +22,14 @@ export const Detials = ({
     const elem = ImageRef.current;
     const rect = elem.getBoundingClientRect();
     Math.sign(rect.top) === -1 ? setSticky(false) : setSticky(true);
-    console.log(rect);
+    // console.log(rect);
   }
   useEffect(() => {
-    console.log(sticky);
+    // console.log(sticky);
   }, [sticky]);
 
-  console.log(data);
-  // const position = sticky ? "fixed"  = "relative"
+
+  // console.log(productImages);
 
   return (
     <Box
@@ -37,8 +37,7 @@ export const Detials = ({
       justifyContent={"start"}
       alignItems={"end"}
       flexDirection={{ base: "column", md: "row" }}
-         >
-
+    >
       {/* imageside */}
       <Box
         maxWidth={{ base: "auto", md: "70%" }}
@@ -46,18 +45,19 @@ export const Detials = ({
         overflowX={{ base: "auto", md: "unset" }}
         flexWrap={{ base: "nowrap", md: "unset" }}
       >
-        {productImages.map((detialImg, index) => (
+        {productImages.map((detialImg, ItemId) => (
           <Image
             style={{
               objectFit: "cover",
               width: "1700px",
               maxheight: "700px",
               borderRadius: "0px",
+              // height:"300px"
             }}
             src={detialImg}
             alt="img"
-            key={index}
-            // ref={ImageRef}
+            key={ItemId}
+            ref={ImageRef}
           />
         ))}
       </Box>
@@ -113,7 +113,7 @@ export const Detials = ({
             justifyContent: "space-evenly",
           }}
         >
-          {productImages.map((color, index) => {
+          {color.map((colour, index) => {
             return (
               <Box
                 key={index}
@@ -126,7 +126,7 @@ export const Detials = ({
                     width: "20px",
                     height: "20px",
                     borderRadius: "10px",
-                    backgroundColor: color.colors,
+                    backgroundColor: colour,
                   }}
                 />
               </Box>
@@ -150,6 +150,7 @@ export const Detials = ({
             }}
           >
             {productDiscription}
+            <br />
             <a
               style={{ color: "blue", fontFamily: "'Montserrat', sans-serif" }}
               href="link"
@@ -265,8 +266,7 @@ export const Detials = ({
                 }}
                 href="link"
               >
-                {" "}
-                Add For 1500{" "}
+                Add For 1500
               </a>
             </p>
             <p
@@ -277,6 +277,7 @@ export const Detials = ({
             >
               200 offer when you buy 2
             </p>
+ 
           </Box>
         </Box>
       </Box>

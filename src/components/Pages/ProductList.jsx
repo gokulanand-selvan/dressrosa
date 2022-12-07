@@ -1,11 +1,11 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import ProductDisplay from "../ProductDisplay";
+import Footer from "../Footer";
 
 export default function ProductList({ product }) {
   const { id } = useParams();
   let products = product.filter((i) => i.categoryId === parseInt(id));
-  // console.log(products);
 
   return (
     <>
@@ -15,8 +15,11 @@ export default function ProductList({ product }) {
           key={e.id}
           data={e}
           detialImages={e.detialImages}
+          title={e.title}
+          price={e.price}
         />
       ))}
+      <Footer />
     </>
   );
 }

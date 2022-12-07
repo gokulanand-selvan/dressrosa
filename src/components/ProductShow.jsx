@@ -15,16 +15,22 @@ export default function ProductShow({
   childArr,
   id,
   navBar,
+  subTitle,
+  mobimg,
 }) {
+
+
+  
   return (
     <>
       <Box
-        backgroundImage={`url(${image})`}
-        backgroundSize={{ base: "cover", md: "cover" }}
+        backgroundImage={{ md:`url(${image})`,base:`url(${mobimg})`}}
+        backgroundSize={{ base: "30em 50em", md: "cover" }}
         backgroundRepeat="no-repeat"
         // backgroundPositionY="20em"
-        width={{ base: "unset", md: "100%" }}
-        height={{ base: "unset", md: "70.9em" }}
+        maxWidth={{base:"100%",md:"unset"}}
+        width={{ base: "800px", md: "100%" }}
+        height={{ base: "50em", md: "70.9em" }}
         fontFamily='"Montserrat",sans-serif'
         zIndex={1}
         position="relative"
@@ -36,10 +42,11 @@ export default function ProductShow({
         <Text
           as={Link}
           to={`/${id}`}
-          lineHeight="1.7em"
-          fontSize="5xl"
+          lineHeight={{base:"unset",md:"1.7em"}}
+          fontSize={{base:"3.25em",md:"4.25em"}}
           fontWeight="extrabold"
           color="white"
+          fontFamily="'Ovo', serif"
           style={{
             position: "absolute",
             top: "62%",
@@ -49,10 +56,26 @@ export default function ProductShow({
         >
           {title}
         </Text>
+
+      { child ||  <Text    as={Link}
+          to={`/${id}`}
+          lineHeight="1.7em"
+          fontSize={{md:"2xl", base:"15px"}}
+          fontWeight="extrabold"
+          color="white"
+          sx={{
+            position: "absolute",
+            top:{md:"53em",base:"52em"},
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            color:"#f4f3ea"
+          }}>
+          {subTitle}
+        </Text>}
       </Box>
       <Box
-        sx={{ backgroundColor: backgroundColor }}
-        paddingBottom="12em"
+        sx={{  backgroundColor: backgroundColor }}
+        paddingBottom={{ md:"12em"}}
         zIndex="1"
       >
         <CardImage
