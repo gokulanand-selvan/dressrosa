@@ -61,7 +61,7 @@ export default function ProductShow({
           to={`/${id}`}
           lineHeight="1.7em"
           fontSize={{md:"2xl", base:"15px"}}
-          fontWeight="extrabold"
+          fontWeight="400"
           color="white"
           sx={{
             position: "absolute",

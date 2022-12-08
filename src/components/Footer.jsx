@@ -1,3 +1,4 @@
+import { Button, Input } from "@chakra-ui/react";
 import React from "react";
 import "./Footer.scss";
 
@@ -9,7 +10,7 @@ export default function Footer() {
           <div className="col-md-12 col-xs-12">
             <div className="block-column">
               <div className="subscribe-message">
-                <p className="large title">Never miss a thing.</p>
+                <p  style={{fontFamily:"Montserrat,sans",fontSize:"26.99px"}} className="large title">Never miss a thing.</p>
               </div>
               <div className="subscribe-form">
                 <form id="subscribeForm" className="subscribe-content-wrapper">
@@ -18,7 +19,7 @@ export default function Footer() {
                   </p>
 
                   <fieldset className="block-field">
-                    <input
+                    <Input
                     style={{border:"solid 1px black"}}
                       className="emailInput"
                       type="email"
@@ -28,12 +29,13 @@ export default function Footer() {
                     />
                   </fieldset>
                   <fieldset>
-                    <input
-                    style={{border:"solid 1px black"}}
+                    <Button
+                    // style={{border:"solid 1px black"}}
                       className="submit-button disabled"
-                      type="submit"
-                      value="Subscribe"
-                    />
+                      color={"gray"}
+                      type="submit">
+                        Subscribe
+                      </Button>
                   </fieldset>
                 </form>
               </div>

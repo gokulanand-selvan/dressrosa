@@ -2,6 +2,23 @@
   text-align: center;
 }
 
+:root {
+  --base-color: #fff;
+  --primary-color: #333b48;
+  --primary-alt-color: #151920;
+  --alert-color: #e04445;
+  --alert-color-dark: #c72526;
+  --light-grey: #eceff1;
+  --mid-grey: #d2d5d8;
+  --dark-grey: #9da1a5;
+  --primary-type: "Montserrat",sans-serif;
+  --light-weight: 400;
+  --medium-weight: 500;
+  --heavy-weight: 600;
+  --base-radius: 5px;
+  --base-block-unit: 5em;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
