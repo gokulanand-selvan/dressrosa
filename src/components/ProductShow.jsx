@@ -17,6 +17,7 @@ export default function ProductShow({
   navBar,
   subTitle,
   mobimg,
+  
 }) {
 
 
