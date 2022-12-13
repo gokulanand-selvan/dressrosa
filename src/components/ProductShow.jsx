@@ -19,9 +19,6 @@ export default function ProductShow({
   mobimg,
   
 }) {
-
-
-  
   return (
     <>
       <Box
@@ -90,13 +87,3 @@ export default function ProductShow({
   );
 }
 
-// eslint-disable-next-line
-{
-  /* <CardImage
-             arrayImages={[
-              c1 ,c2,c3
-            ]}
-            width="100%"
-            height="34.5em"
-        /> */
-}

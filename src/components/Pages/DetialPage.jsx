@@ -4,15 +4,11 @@ import { useParams } from "react-router-dom";
 import { Detials } from "../Detials";
 
 
-export default function DetialPage({ productDetials }) {
-  // console.log(productDetials);
+export default function DetialPage({ productDetials,cart,setCart }) {
   const pr = useParams();
-  // console.log(pr.detials);
   let detialItem = productDetials.filter((i) => {
-    // console.log(i.itemId, (detials));
     return i.itemId === parseInt(pr.detials);
   });
-  // console.log(detialItem);
   return (
     <Box>
       <>
@@ -25,6 +21,9 @@ export default function DetialPage({ productDetials }) {
             shippingTime={e.shippingTime}
             productDiscription={e.productDiscription}
             color={e.color}
+            id={e.itemId}
+            cart={cart}
+            setCart={setCart}
           />
         ))}
       </> 

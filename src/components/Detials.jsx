@@ -1,7 +1,9 @@
-import { Box, Image, Select } from "@chakra-ui/react";
+import { Box, Flex, Image, Select, Text, Button } from "@chakra-ui/react";
 import React, { useEffect, useRef, useState } from "react";
+import {  useNavigate } from "react-router-dom";
+import Cartimg from "./images/iconcart.svg";
 
-
+// import Chekout from "./Chekout";
 
 export const Detials = ({
   productImages,
@@ -9,6 +11,9 @@ export const Detials = ({
   productDiscription,
   shippingTime,
   color,
+  cart,
+  setCart,
+  id,
 }) => {
   const [sticky, setSticky] = useState(true);
 
@@ -28,8 +33,20 @@ export const Detials = ({
     // console.log(sticky);
   }, [sticky]);
 
+  // add cart
 
-  // console.log(productImages);
+  const Add = () => {
+    setCart([
+      ...cart,
+      {
+        dress: "hood",
+        price: "$10",
+      },
+    ]);
+  };
+  // console.log(cart);
+
+  const navigate = useNavigate();
 
   return (
     <Box
@@ -106,13 +123,11 @@ export const Detials = ({
               Women
             </option>
           </Select>
+          <Button onClick={() => navigate("/chekout")}>
+            <img src={Cartimg} alt="dd" />
+          </Button>
         </Box>
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "space-evenly",
-          }}
-        >
+        <Flex gap={2} justifyContent={"center"}>
           {color.map((colour, index) => {
             return (
               <Box
@@ -132,7 +147,7 @@ export const Detials = ({
               </Box>
             );
           })}
-        </Box>
+        </Flex>
         <br />
         <Box
           alignItems={"center"}
@@ -258,26 +273,29 @@ export const Detials = ({
             flexDirection={"column"}
             justifyContent={"center"}
           >
-            <p>
-              <a
-                style={{
-                  color: "whitesmoke",
-                  fontFamily: "'Montserrat', sans-serif",
-                }}
-                href="link"
-              >
-                Add For 1500
-              </a>
-            </p>
-            <p
-              style={{
+            <Button
+            background={"none"}
+             onClick={() => {
+              Add();
+            }}
+            
+              sx={{
                 color: "whitesmoke",
                 fontFamily: "'Montserrat', sans-serif",
               }}
             >
+              Add For 1500
+            </Button>
+            <Text
+              cursor={"pointer"}
+              style={{
+                color: "whitesmoke",
+                fontFamily: "'Montserrat', sans-serif",
+              }}
+             
+            >
               200 offer when you buy 2
-            </p>
- 
+            </Text>
           </Box>
         </Box>
       </Box>

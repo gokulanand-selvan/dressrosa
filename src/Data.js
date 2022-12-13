@@ -243,3 +243,7 @@ export const productDetials = [
   }
 
 ]
+
+export const chekoutBox = [
+  ""
+]
