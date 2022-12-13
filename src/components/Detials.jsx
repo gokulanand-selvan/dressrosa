@@ -124,7 +124,7 @@ export const Detials = ({
             </option>
           </Select>
           <Button onClick={() => navigate("/chekout")}>
-            <img src={Cartimg} alt="dd" />
+            <img src={Cartimg} alt="dd" /> {cart.length}
           </Button>
         </Box>
         <Flex gap={2} justifyContent={"center"}>

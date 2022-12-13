@@ -4,21 +4,25 @@
     background-position: 0 0, 6px 6px;
     background-size: 12px 12px;
     padding: calc(var(--base-block-unit) / 2) 0;
+    font-family: "'Montserrat', sans-serif";
    
   }
   
   .containerFluid {
       width: 90%;
-      height: 5em;
+      height: 4em;
       max-width: 1680px;
       margin: 0 auto;
       padding-right: 15px;
       padding-left: 15px;
+      font-family: "'Montserrat', sans-serif";
     }
   
   footer {
       background: #fff;
     bottom: auto !important;
+    font-family: "'Montserrat', sans-serif";
+
     transition: opacity 0.3s ease, -webkit-transform 0.3s ease;
     transition: transform 0.3s ease, opacity 0.3s ease;
     transition: transform 0.3s ease, opacity 0.3s ease,
@@ -35,14 +39,20 @@
         transition: transform 0.2s ease, color 0.2s ease,
           -webkit-transform 0.2s ease;
         transform: perspective(4em) rotateY(0deg);
+        font-family: "'Montserrat', sans-serif";
+
       }
       .link:hover,
       .link:focus {
           color: var(--primary-alt-color);
         transform: perspective(4em) rotateY(-3deg);
+        font-family: "'Montserrat', sans-serif";
+
       }
       .footnote {
           font-size: 80%;
+          font-family: "'Montserrat', sans-serif";
+
       }
     }
   }
@@ -51,6 +61,8 @@
   
   footer .footer-menu {
     padding: calc(var(--base-block-unit) / 2) 0 calc(var(--base-block-unit) / 2) 0;
+    font-family: "'Montserrat', sans-serif";
+
   }
   footer .block-column {
     justify-content: space-between;
@@ -81,6 +93,8 @@
     background-color: var(--base-color);
     background-position: 0 0, 6px 6px;
     background-size: 12px 12px;
+    font-family: "'Montserrat', sans-serif";
+
     padding: calc(var(--base-block-unit) / 2) 0;
   }
   footer .common-subscribe .subscribe-content-wrapper,

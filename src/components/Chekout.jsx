@@ -1,5 +1,6 @@
 import { Box, TableContainer, Table, Thead, Tbody, Tr,Th, Td,Tfoot,Text } from "@chakra-ui/react";
 import React from 'react'
+import Footer from "./Footer"
 
 
 export default function Chekout({cart}) {
@@ -24,10 +25,12 @@ export default function Chekout({cart}) {
             </Tbody>
           ))}
             <Tfoot>
-            <Text  border={"1px solid black"} width={'10em'} textAlign={"center"} color={"chocolate"} >  Total Item:  {cart.length} </Text>
+            <Text  border={"1px solid black"} width={'110%'} height={"2em"}  textAlign={"center"} color={"chocolate"} >  Total Item:  {cart.length} </Text>
             </Tfoot>
           </Table>
         </TableContainer>
+        <br />
+        <Footer />
     </Box>
   )
 }
