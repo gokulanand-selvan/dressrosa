@@ -1,25 +1,37 @@
-import { Box,Text } from '@chakra-ui/react'
+import { Box, TableContainer, Table, Thead, Tbody, Tr,Th, Td,Tfoot,Text } from "@chakra-ui/react";
 import React from 'react'
 
 
 export default function Chekout({cart}) {
   return (
     <Box textAlign={"center"} >
-    <Text 
-    style={{color:"black"}}>
-      {cart.map(e => (
-      <>
-         Item: {e.dress} <br />
-          Price: {e.price} <br />
-          </>
-      ))}
-    </Text>
-   <Text color={"chocolate"} >  Total Item:  {cart.length} </Text>
+    <TableContainer>
+          <Table variant="simple">
+            <Thead>
+              <Tr>
+                <Th> Item</Th>
+                <Th>Price</Th>
+              </Tr>
+            </Thead>
+      {cart.map((e) => (
+            <Tbody>
+                <Td>
+                    {e.dress}
+                </Td>
+                <Td>
+                    {e.price}
+                </Td>
+            </Tbody>
+          ))}
+            <Tfoot>
+            <Text  border={"1px solid black"} width={'10em'} textAlign={"center"} color={"chocolate"} >  Total Item:  {cart.length} </Text>
+            </Tfoot>
+          </Table>
+        </TableContainer>
     </Box>
   )
 }
 
-// import { Box, TableContainer, Table, Thead, Tbody, Tr,Th, Td } from "@chakra-ui/react";
 // import React from "react";
 
 // export default function Tables() {
@@ -34,22 +46,19 @@ export default function Chekout({cart}) {
 //                 <Th>Price</Th>
 //               </Tr>
 //             </Thead>
-//       {data.map((e) => (
+//       {cart.map((e) => (
 //             <Tbody>
 //                 <Td>
-//                     {e.name}
+//                     {e.dress}
 //                 </Td>
 //                 <Td>
-//                     {e.age}
-//                 </Td>
-//                 <Td>
-//                     {e.school}
-//                 </Td>
-//                 <Td>
-//                     {e.class}
+//                     {e.price}
 //                 </Td>
 //             </Tbody>
 //           ))}
+//             <Tfoot>
+//             <Text color={"chocolate"} >  Total Item:  {cart.length} </Text>
+//             </Tfoot>
 //           </Table>
 //         </TableContainer>
 //     </Box>

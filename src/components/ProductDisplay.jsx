@@ -18,19 +18,21 @@ export default function ProductDisplay({ detialImages, title, price, id }) {
   };
 
   const navHoverHandler = {
-    backgroundColor: whilehover ? "white" : "black",
-    color: whilehover ? "black" : "white",
+    backgroundColor: whilehover ? "white" : "white",
+    color: whilehover ? "black" : "black",
     textAlign: "center",
   };
 
   return (
     <>
+    <Box background={"black"} >
+    <Navbar />
+    </Box>
       <Box
         display={{ base: "flex", md: "grid" }}
         justifyContent={"center"}
         backgroundColor={"black"}
       >
-        <Navbar />
         <Grid
           gridTemplateColumns={{ base: "unset", md: "auto auto" }}
           rowGap={{ base: "1", md: "50px" }}
@@ -77,6 +79,7 @@ export default function ProductDisplay({ detialImages, title, price, id }) {
                 position={"relative"}
                 // color={"white"}
                 bottom={{md:"15%",base:"14%"}}
+                borderRadius={"10px"}
                 left={"0%"}
                 textAlign="center"
                 zIndex={1}
